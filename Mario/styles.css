@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  #game {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #9dcc98;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #mario {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 100px;
+    background-color: #f7a032;
+  }
+  
+  #health-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  #health {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+  }
+  
+  #health-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #apple, #hammer {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  #apple {
+    top: 50%;
+    left: 20%;
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.aNmW-d1BWncTtT1ehnankwHaIk&pid=Api&P=0&h=180');
+  }
+  
+  #hammer {
+    top: 50%;
+    right: 20%;
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.RaKSNIzwgwHG-HJIDkvEnAHaHa&pid=Api&P=0&h=180');
+  }
+  
